@@ -4,6 +4,7 @@ import json
 import spotipy
 import webbrowser
 import spotipy.util as util
+from termcolor import colored
 from json.decoder import JSONDecodeError
 from config import SPOTIFY
 
@@ -19,7 +20,7 @@ def play_song(searchString):
     trackSelectionList = []
 
     for trackItem in trackResults:
-        print("🔊 Playing : Track 🎵 : {}  URI:{}".format(trackItem['name'], trackItem['uri']))
+        print("🔊 {} : Track 🎵 : {}  URI:{}".format(colored('Playing', 'red'), colored(trackItem['name'], 'green'), trackItem['uri']))
         trackSelectionList.append(trackItem['uri'])
 
     devices = spotifyObject.devices()

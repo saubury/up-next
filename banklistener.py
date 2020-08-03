@@ -5,6 +5,7 @@ import config
 import json
 import logging
 from spotifyapp import findAndPlaySong
+from termcolor import colored
 
 cli = sys.modules['flask.cli']
 cli.show_server_banner = lambda *x: None
