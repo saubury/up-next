@@ -1,6 +1,12 @@
 # Up Next
 Picking the next Spotify song to play using the [UP Bank](https://up.com.au/) [API](https://developer.up.com.au/#getting-started)
 
+Building a music jukebox and selecting the next song with a bit of 🎼
+
+# Overview
+
+![Arch Overview](./docs/arch.png)
+
 # Setup
 
 ## Initial Python Setup
@@ -29,3 +35,7 @@ python banklistener.py
 ```
 python banklistener.py
 ```
+
+# In Action
+
+![Python screenshot](./docs/screenshot-python.png)
