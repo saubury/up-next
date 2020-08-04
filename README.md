@@ -7,7 +7,27 @@ Building a music jukebox and selecting the next song with a bit of 🎼
 
 ![Arch Overview](./docs/arch.png)
 
+
+
+
+# In Action
+
+## Payment
+
+Make a payment; with the song request in the description field
+```
+🎵 Never Gonna Give You Up by Rick Astley
+```
+
+![Python screenshot](./docs/payment.png)
+
+And within 2 or 3 seconds; the funds are recived by the _payee_ (thank you real time banking!) A webhook quickly parses the song request and starts the requested song on Spotify.
+
+![Python screenshot](./docs/screenshot-python.png)
+
+
 # Setup
+
 
 ## Initial Python Setup
 ```
@@ -35,7 +55,3 @@ python banklistener.py
 ```
 python banklistener.py
 ```
-
-# In Action
-
-![Python screenshot](./docs/screenshot-python.png)
