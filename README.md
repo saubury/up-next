@@ -1,12 +1,17 @@
 # Up Next
 Picking the next Spotify song to play using the [UP Bank](https://up.com.au/) [API](https://developer.up.com.au/#getting-started)
 
-Building a music jukebox and selecting the next song with a bit of 🎼
+Build a music jukebox and select the next song with a bit of 🎵 and a small amount of 💲. Using real time banking APIs to select the next song to play. A home jukebox made with a few lines of Python.
+
+
+![UP Next in action](./docs/up-next-gif.gif)
+
 
 # Overview
 
 ![Arch Overview](./docs/arch.png)
 
+Register a webhook to intercept payments. Parse the payment description and seach for the track in Spotify. Add song to playlist and enjoy the music.
 
 
 
@@ -44,7 +49,7 @@ pip install -r requirements.txt
 Copy `config-example.py` to `config.py` and 
 
 ## UP Bank API Setup
-Review [Getting Started](https://developer.up.com.au/#getting-started)
+Review [Getting Started](https://developer.up.com.au/#getting-started). Start the application with
 
 ```
 python banklistener.py
@@ -52,6 +57,8 @@ python banklistener.py
 
 
 ## Spotify Setup
+Review [create Spotify integration](https://developer.spotify.com/dashboard/login) to generate and establish tokens. You can test just the Spotify setup with
+
 ```
-python banklistener.py
+python spotifyapp.py
 ```
